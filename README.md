@@ -4,7 +4,7 @@
 ```sql
 SET @db_prefix := 'wp_';
 SET @old_site := '**{old_site_url}**';
-SET @new_site := '**{new_site_url}**;
+SET @new_site := '**{new_site_url}**';
 SET @options := concat(@db_prefix,'options');
 SET @posts := concat(@db_prefix,'posts');
 
@@ -25,7 +25,7 @@ execute stmt;
 ```sql
 SET @db_prefix := 'wp_';
 SET @old_site := '**{old_site_url}**';
-SET @new_site := '**{new_site_url}**;
+SET @new_site := '**{new_site_url}**';
 SET @blogs := concat(@db_prefix,'blogs');
 SET @site := concat(@db_prefix,'site');
 
