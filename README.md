@@ -3,8 +3,8 @@
 ## Update all references from the old to the new url
 ```sql
 SET @db_prefix := 'wp_';
-SET @old_site := '**{old_site_url}**';
-SET @new_site := '**{new_site_url}**';
+SET @old_site := 'old_site_url.com';
+SET @new_site := 'new_site_url.com';
 SET @options := concat(@db_prefix,'options');
 SET @posts := concat(@db_prefix,'posts');
 
@@ -24,8 +24,8 @@ execute stmt;
 ### for multi site you also need to update the 'site' and 'blogs' tabels 
 ```sql
 SET @db_prefix := 'wp_';
-SET @old_site := '**{old_site_url}**';
-SET @new_site := '**{new_site_url}**';
+SET @old_site := 'old_site_url.com';
+SET @new_site := 'new_site_url.com';
 SET @blogs := concat(@db_prefix,'blogs');
 SET @site := concat(@db_prefix,'site');
 
